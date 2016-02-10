@@ -1,0 +1,26 @@
+*, *:before, *:after {@include box-sizing;}
+html {
+	font-size: 62.5%;
+	@include breakpoint($portable) {
+        font-size: 68.75%;
+    }
+    @include breakpoint($mobile) {
+        font-size: 75%;
+    }
+}
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	color: $text;
+	background: #fff;
+	@include touch;
+	@include highlight;
+	@include text-size;
+	text-rendering: optimizelegibility;
+	@include font-size(1.4);
+	line-height: 1.6em;
+    overflow-x: hidden;
+}
+div.overflow {
+    overflow-x: hidden;
+}

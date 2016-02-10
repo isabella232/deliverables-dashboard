@@ -1,0 +1,17 @@
+$nav-width: 300px;
+$bucket-width: 72px;
+$tag-width: $nav-width - $bucket-width;
+
+$border: 1px solid $border-color;
+
+$susy: (
+    math: fluid,
+    container: auto,
+    gutter-position: split,
+    columns: 12,
+    gutters: 0,
+    column-width: false,
+    last-flow: to,
+);
+
+$gutter: gutter(0);

@@ -1,0 +1,100 @@
+doctype html
+html
+    //- Meta
+    include jade/head/head
+    body(onload='loaded()').nav-hide
+        //- Meta
+        include jade/main
+        //- Navigation
+        include jade/layout/nav/navigation
+        //- Content
+        header.header
+            img.burger(src='images/more.svg')
+            .logo
+        .overflow
+            .content
+                .hero.All
+                    .background
+                        img(src='images/backgrounds/apollo.jpg')
+                    .background__screen
+                    .hero__content.hero__all
+                        .hero__title
+                            h2.h2 Client Final Deliverable
+                        p.hero__description Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.
+                    .hero__content.hero__design
+                        .hero__details
+                            .image
+                                img(src='https://5815cf3b48d232b10950-5c3a4fdf2ac35d7e6428b1391724464d.ssl.cf1.rackcdn.com/photos/40525-1-1.jpg')
+                            p.hero__intro Your Skookum Contact
+                            .hero__title
+                                h2.h2 Stephen Davis
+                            p.hero__description Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.
+                    .hero__content.hero__strategy
+                        .hero__details
+                            .image
+                                img(src='https://5815cf3b48d232b10950-5c3a4fdf2ac35d7e6428b1391724464d.ssl.cf1.rackcdn.com/photos/40567-1-1.jpg')
+                            p.hero__intro Your Skookum Contact
+                            .hero__title
+                                h2.h2 Jason Rome
+                            p.hero__description Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.
+                    .hero__content.hero__tech
+                        .hero__details
+                            .image
+                                img(src='https://5815cf3b48d232b10950-5c3a4fdf2ac35d7e6428b1391724464d.ssl.cf1.rackcdn.com/photos/40552-1-1.jpg')
+                            p.hero__intro Your Skookum Contact
+                            .hero__title
+                                h2.h2 Blake Hollingsworth
+                            p.hero__description Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.
+                +deliverable(
+                    'POC Native App- Beacon Proximity Detection',
+                    'The documentation says Beacon, but open to all the other options, start considering options from Scratch',
+                    'January 20, 2016',
+                    ['design', 'strategy', 'tech'],
+                    ['PDF', 'Documentation'],
+                    '#'
+                )
+                +deliverable(
+                    'CPG Admin- Coupon Administration Platform Demo',
+                    'description',
+                    'date',
+                    ['design', 'strategy'],
+                    ['PDF', 'Sketch'],
+                    '#'
+                )
+                +deliverable(
+                    'title',
+                    'description',
+                    'date',
+                    ['design', 'strategy'],
+                    ['PDF', 'Sketch'],
+                    '#'
+                )
+                +deliverable(
+                    'title',
+                    'description',
+                    'date',
+                    ['design', 'strategy'],
+                    ['PDF', 'Sketch'],
+                    '#'
+                )
+                +deliverable(
+                    'title',
+                    'description',
+                    'date',
+                    ['design', 'strategy'],
+                    ['PDF', 'Sketch'],
+                    '#'
+                )
+                +deliverable(
+                    'title',
+                    'description',
+                    'date',
+                    ['design', 'strategy'],
+                    ['PDF', 'Sketch'],
+                    '#'
+                )
+
+
+
+        //- Script
+        include jade/scripts/script

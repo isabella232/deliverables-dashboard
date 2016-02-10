@@ -1,0 +1,44 @@
+.header {
+    height: $bucket-width;
+    @include fixed(0,0,null,$nav-width);
+    @include box-sizing(content-box);
+    background: rgba(255,255,255,0.93);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    z-index: 9;
+    @include breakpoint($mobile) {
+        @include fixed(0,0,null,0);
+    }
+    .logo {
+        @include size(180px, 50px);
+        @include absolute(0,null,0,-12px);
+        margin: auto;
+        &:before {
+            content:url('../images/logo-plain.svg');
+            display: block;
+        }
+        @include breakpoint($mobile) {
+            @include absolute(0,0,0,0);
+            &:before {
+                content:url('../images/logo-plain.svg');
+            }
+        }
+    }
+    .burger {
+        display: none;
+        @include absolute(0,0,null,-4px);
+        padding: 24px;
+        cursor: pointer;
+        @include breakpoint($mobile) {
+            display: block;
+        }
+    }
+    h1.h1 {
+        font-size: 24px;
+        line-height: $bucket-width - 1;
+        padding-left: 24px;
+        @include breakpoint($mobile) {
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+}

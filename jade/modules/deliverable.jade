@@ -1,0 +1,13 @@
+mixin deliverable(title, description, date, bucket, tag, link)
+	.deliverable.is-active
+		a(href= link target="_blank").deliverable__content
+			ul.deliverable__buckets
+				each item in bucket
+					li.deliverable__bucket
+						span= item
+			h2.h2.deliverable__title= title
+			p.deliverable__date= date
+			p.deliverable__description= description
+			ul.deliverable__tags
+				each item in tag
+					li.deliverable__tag= item

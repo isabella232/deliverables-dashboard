@@ -1,0 +1,127 @@
+.hero {
+    width: 100%;
+    padding: 36px 24px 50px;
+    position: relative;
+    overflow: hidden;
+    .background {
+        img {
+            @include absolute(0,0,0,0);
+            left: -50%;
+            margin: -50% auto; 
+            min-width: 150%;
+            min-height: 50%;
+            z-index: 0;
+        }
+    }
+    .background__screen {
+        @include absolute(0,0,0,0);
+        background: transparentize($primary-color, .05);
+        @include transition(background 300ms ease-in-out);
+    }
+    .hero__content {
+        display: none;
+        @include clearfix();
+        position: relative;
+        z-index: 1;
+    }
+    &.All {
+        .background__screen {
+            background: transparentize($primary-color, .1);
+        }
+        .hero__all {display: block}
+    }
+    &.Design {
+        .background__screen {
+            background: transparentize($second-color, .1);
+        }
+        .hero__design {display: block}
+    }
+    &.Strategy {
+        .background__screen {
+            background: transparentize($third-color, .1);
+        }
+        .hero__strategy {display: block}
+    }
+    &.Tech {
+        .background__screen {
+            background: transparentize($fourth-color, .1);
+        }
+        h2.h2, p, span {color: $header;}
+        .hero__tech {display: block}
+    }
+    h2.h2, p, span {color: white;}
+    h2.h2 {
+        @include font-size(3.6);
+        padding: 12px 0 36px;
+    }
+    p {
+        padding-right: 30%;
+        @include breakpoint($portable) {
+            padding-right: 0;
+        }
+    }
+}
+
+
+.hero__details {
+    position: relative;
+    padding: 5% 0 5% 130px;
+    @include breakpoint($portable) {
+        padding-left: 0;
+        text-align: center;
+    }
+    .image {
+        @include square(100px);
+        @include circle();
+        @include absolute(0,null,null,0);
+        overflow: hidden;
+        margin-top: 6%;
+        border: 2px solid rgba(0,0,0,0.1);
+        @include animate(drop-down 300ms cubic-bezier(.1,.6,.3,1.15) 350ms);
+        @include delay-fix;
+        @include breakpoint($portable) {
+            position: relative;
+            margin: 24px auto
+        }
+        img {
+            @include square(100px);
+        }
+    }
+    .hero__intro,
+    .hero__title h2.h2,
+    .hero__description {
+        @include translate3d(0, 0, 0);
+    }
+    .hero__intro {
+        @include font-size(1);
+        font-weight: 900;
+        @include animate(fly-in 400ms cubic-bezier(.1,.6,.3,1.10) 0ms);
+    }
+    .hero__title h2.h2 {
+        padding: 0 0 24px;
+        @include animate(fly-in 400ms cubic-bezier(.1,.6,.3,1.10) 100ms);
+        @include delay-fix;
+    }
+    .hero__description {
+        padding-top: 0;
+        @include animate(fly-in 400ms cubic-bezier(.1,.6,.3,1.10) 200ms);
+        @include delay-fix;
+    }
+}
+
+@include keyframes(fly-in) {
+    0% {
+        @include translate3d(100%, 0, 0);
+    }
+    100% {
+        @include translate3d(0, 0, 0);
+    }
+}
+@include keyframes(drop-down) {
+    0% {
+        @include translate3d(0, -200%, 0);
+    }
+    100% {
+        @include translate3d(0, 0, 0);
+    }
+}

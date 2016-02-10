@@ -1,0 +1,151 @@
+.content {
+    position: relative;
+    padding-top: $bucket-width;
+    margin-left: $nav-width;
+    background: white;
+    @include clearfix();
+    @include breakpoint($mobile) {
+        margin-left: 0;
+    }
+}
+.deliverable {
+    position: relative;
+    @include span(4 of 12);
+    padding-bottom: 36%;
+    border-right: $border;
+    border-bottom: $border;
+    //@include animate(grow cubic-bezier(.1,.6,.3,1.05) 200ms);
+    &.hide {
+        display: none !important;
+    }
+    &.show {
+        display: block !important;
+    }
+    @include breakpoint($hover-zone) {
+        &:hover {
+            background: #F8FAFB;
+            @include inset-shadow(0,1px,0,#E7E8EA);
+        }
+    }
+    @include breakpoint($TV) {
+        @include span(4 of 12);
+        padding-bottom: 40%;
+    }
+    @include breakpoint($desktop) {
+        @include span(4 of 12);
+        padding-bottom: 49%;
+    }
+    @include breakpoint($laptop) {
+        @include span(6 of 12);
+        padding-bottom: 49%;
+    }
+    @include breakpoint($portable-landscape-wide) {
+        @include span(6 of 12);
+        padding-bottom: 58%;
+    }
+    @include breakpoint($portable-landscape) {
+        @include span(12 of 12);
+        padding: 0px 24px 12px;
+    }
+}
+
+.deliverable__content {
+    @include absolute(0,0,0,0);
+    padding: 24px;
+    @include breakpoint($portable-landscape) {
+        position: relative;
+        padding: 0;
+        .deliverable__tags {
+            position: relative;
+        }
+    }
+    .deliverable__buckets {
+        @include clearfix();
+        padding: 24px 0;
+        li {
+            float: left;
+            display: inline-block;
+            position: relative;
+            @include square(44px);
+            @include circle();
+            margin-right: 16px;
+            &:after {
+                display: block;
+                @include square(40px);
+                @include absolute(0,0,0,0);
+                margin: auto;
+            }
+            &.deliverable__bucket span {
+                display: none;
+            }
+            &.deliverable__bucket.design {
+                background: $second-color;
+                &:after {
+                    content:url('../images/buckets/design.svg');
+                }
+            }
+            &.deliverable__bucket.strategy {
+                background: $third-color;
+                &:after {
+                    content:url('../images/buckets/strategy.svg');
+                }
+            }
+            &.deliverable__bucket.tech {
+                background: $fourth-color;
+                &:after {
+                    content:url('../images/buckets/tech-dark.svg');
+                }
+            }
+        }
+    }
+    h2.h2 {
+        @include font-size(2.4);
+        font-weight: 900;
+        padding-bottom: 8px;
+    }
+    .deliverable__date {
+        @include font-size(1);
+        font-weight: 500;
+        padding-bottom: 24px;
+        color: #989EAC;
+    }
+    .deliverable__description {
+        @include font-size(1.4);
+        font-weight: 500;
+        margin-bottom: 36px;
+    }
+    h5.h5 {
+        float: left;
+        display: inline-block;
+        margin-right: 8px;
+        position: relative;
+        top: 1px;
+        @include font-size(1);
+        font-weight: 500;
+    }
+    .deliverable__tags {
+        position: absolute;
+        bottom: 24px;
+        @include clearfix();
+        @include breakpoint($portable-landscape) {
+            position: relative;
+            bottom: 0;
+            padding-bottom: 8px;
+        }
+        li {
+            float: left;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .deliverable__tag {
+            height: 20px;
+            @include font-size(1);
+            line-height: 20px;
+            padding: 0 16px;
+            margin-bottom: 8px;
+            @include border-radius(40px);
+            background: $skookum-black;
+            color: white;
+        }
+    }
+}

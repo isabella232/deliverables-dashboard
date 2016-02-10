@@ -1,0 +1,164 @@
+.navigation {
+    width: $nav-width;
+    @include fixed(0,null,0,0);
+    .buckets {
+        width: $bucket-width;
+        @include absolute(0,null,0,0);
+        background: $skookum-black;
+        border-right: 1px solid $skookum-black;
+        .bucket {
+            height: $bucket-width;
+            position: relative;
+            @include breakpoint($hover-zone) {
+                &:hover a {
+                    background: rgba(255,255,255,0.15);
+                }
+            }
+            &.is-active a {
+                background: rgba(255,255,255,0.15);
+                @include square(86%);
+                margin: auto;
+                position: relative;
+                top: 7%;
+                .bucket__name {
+                    bottom: 3px;
+                }
+            }
+            &.all {
+                background: $primary-color;
+            }
+            &.DESIGN {
+                background: $second-color;
+            }
+            &.STRATEGY {
+                background: $third-color;
+            }
+            &.TECH {
+                background: $fourth-color;
+                .bucket__name {color: $header}
+            }
+        }
+        .bucket__anchor {
+            @include square(100%);
+            display: block;
+            color: white;
+            @include transition(background 200ms ease-in-out);
+        }
+        .bucket__icon {
+            @include square(40px);
+            display: block;
+            @include absolute(-20px,0,0,0);
+            margin: auto;
+        }
+        .bucket__name {
+            @include absolute(null,0,8px,0);
+            @include font-size(1);
+            text-align: center;
+            text-transform: uppercase;
+            @include breakpoint($portable) {
+                font-size: 10px;
+            }
+        }
+    }
+    .tags {
+        @include size($tag-width, 100%);
+        @include absolute(0,0,0,$bucket-width);
+        background: #F8FAFB;
+        border-right: $border;
+        .tag {
+            margin: 1px;
+            &.is-active {
+                color: black;
+                font-weight: 900;
+                .tag__name {
+                    border-bottom: 1px solid #000;
+                }
+            }
+        }
+        a {
+            display: block;
+            position: relative;
+            @include font-size(1.2);
+            .tag__icon {
+                float: left;
+                img {
+                    @include square(40px);
+                    @include absolute(-2px,0,0,8px);
+                    margin: auto 0;
+                }
+            }
+            .tag__name {
+                margin-left: 54px;
+                padding: 12px 0;
+                border-bottom: $border;
+            }
+        }
+    }
+}
+@include breakpoint($mobile) {
+    body.nav-show {
+        .tags {
+            @include translate3d(0, 0, 0);
+            @include animate(nav-open 250ms ease-out);
+        }
+        .buckets {
+            @include translate3d(0, 0, 0);
+            @include animate(tags-open 200ms ease-out);
+            @include delay-fix;
+        }
+        .content, header {
+            @include translate3d($nav-width, 0, 0);
+            @include animate(content-open 300ms ease-out);
+        }
+    }
+    body.nav-hide {
+        .navigation {
+            @include translate3d(-$nav-width, 0, 0);
+            @include animate(nav-close 200ms cubic-bezier(.1,.6,.3,1.10));
+        }
+        .content, header {
+            @include translate3d(0, 0, 0);
+            @include animate(content-close 300ms cubic-bezier(.1,.6,.3,1.10));
+        }
+    }
+}
+@include keyframes(nav-open) {
+    0% {
+        @include translate3d(-$nav-width / 2, 0, 0);
+    }
+    100% {
+        @include translate3d(0, 0, 0);
+    }
+}
+@include keyframes(tags-open) {
+    0% {
+        @include translate3d(-100%, 0, 0);
+    }
+    100% {
+        @include translate3d(0, 0, 0);
+    }
+}
+@include keyframes(nav-close) {
+    0% {
+        @include translate3d(0, 0, 0);
+    }
+    100% {
+        @include translate3d(-$nav-width / 2, 0, 0);
+    }
+}
+@include keyframes(content-open) {
+    0% {
+        @include translate3d(0, 0, 0);
+    }
+    100% {
+        @include translate3d($nav-width, 0, 0);
+    }
+}
+@include keyframes(content-close) {
+    0% {
+        @include translate3d($nav-width, 0, 0);
+    }
+    100% {
+        @include translate3d(0, 0, 0);
+    }
+}

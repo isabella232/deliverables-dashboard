@@ -1,0 +1,8 @@
+mixin blocks(quantity, number)
+    ul(class= quantity).blocks
+        - for (var x = 0; x < number; x++)
+            li.block
+                a(href='../../pages/404').block__anchor
+                    .block__content
+                        h4.h4.block__title Hero Title Text
+                        p.block__abstract Nullam id dolor id nibh ultricies vehicula ut id elit.

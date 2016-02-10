@@ -1,0 +1,34 @@
+mixin hero-content()
+    .block__content
+        h3.h3.block__title Hero Title Text
+        p.block__abstract Nullam id dolor id nibh ultricies vehicula ut id elit.
+    //- .corner-badge
+
+mixin hero__grid--one(link)
+    .hero__grid--one
+        .hero__grid--primary
+            a(href= link).block__anchor
+                .beacon
+                +hero-content()
+
+mixin hero__grid--two(link1, link2)
+    .hero__grid--one
+        .hero__grid--primary
+            a(href= link1).block__anchor
+                +hero-content()
+        .hero__grid--secondary
+            a(href= link2).block__anchor
+                +hero-content()
+
+mixin hero__grid--three(link1,link2,link3)
+    ul.hero__grid--three
+        li.hero__grid--primary
+            a(href= link1).block__anchor
+                +hero-content()
+        li.hero__grid--secondary
+            a(href= link2).block__anchor
+                +hero-content()
+        li.hero__grid--secondary
+            a(href= link3).block__anchor
+                .beacon
+                +hero-content()
