@@ -1085,10 +1085,12 @@ h1, h2, h3, h4, h5, h6 {
       display: table; }
     .hero .hero__content:after {
       clear: both; }
-  .hero.All .background__screen {
-    background: rgba(37, 50, 56, 0.9); }
-  .hero.All .hero__all {
-    display: block; }
+  .hero.All {
+    padding: 72px 24px 97px; }
+    .hero.All .background__screen {
+      background: rgba(37, 50, 56, 0.9); }
+    .hero.All .hero__all {
+      display: block; }
   .hero.Design .background__screen {
     background: rgba(241, 101, 33, 0.9); }
   .hero.Design .hero__design {
