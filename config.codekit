@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19102",
+"creatorBuild": "19115",
 "files": {
 	"\/css\/main.css": {
 		"fileType": 16,
@@ -10,6 +10,72 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/images\/avatars\/hager.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12691,
+		"inputAbbreviatedPath": "\/images\/avatars\/hager.jpg",
+		"outputAbbreviatedPath": "\/images\/avatars\/hager.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatars\/howie.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11579,
+		"inputAbbreviatedPath": "\/images\/avatars\/howie.jpg",
+		"outputAbbreviatedPath": "\/images\/avatars\/howie.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatars\/long.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10583,
+		"inputAbbreviatedPath": "\/images\/avatars\/long.jpg",
+		"outputAbbreviatedPath": "\/images\/avatars\/long.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatars\/luke.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13649,
+		"inputAbbreviatedPath": "\/images\/avatars\/luke.png",
+		"outputAbbreviatedPath": "\/images\/avatars\/luke.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatars\/robinson.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12608,
+		"inputAbbreviatedPath": "\/images\/avatars\/robinson.jpg",
+		"outputAbbreviatedPath": "\/images\/avatars\/robinson.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatars\/scott.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5762,
+		"inputAbbreviatedPath": "\/images\/avatars\/scott.jpeg",
+		"outputAbbreviatedPath": "\/images\/avatars\/scott.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/images\/backgrounds\/apollo.jpg": {
 		"fileType": 16384,
@@ -133,7 +199,7 @@
 	"\/jade\/head\/head_nested.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/head\/head_nested.jade",
 		"outputAbbreviatedPath": "\/jade\/head\/head_nested.html",
@@ -144,7 +210,7 @@
 	"\/jade\/layout\/body\/side-bar.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/layout\/body\/side-bar.jade",
 		"outputAbbreviatedPath": "\/jade\/layout\/body\/side-bar.html",
@@ -155,7 +221,7 @@
 	"\/jade\/layout\/footer\/footer.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/layout\/footer\/footer.jade",
 		"outputAbbreviatedPath": "\/jade\/layout\/footer\/footer.html",
@@ -252,7 +318,7 @@
 	"\/jade\/scripts\/script_nested.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/jade\/scripts\/script_nested.jade",
 		"outputAbbreviatedPath": "\/jade\/scripts\/script_nested.html",
@@ -2808,9 +2874,9 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "SYM Dashboard",
-	"displayValueWasSetByUser": 1,
-	"iconImageName": "compass_darkGray"
+	"displayValue": "deliverables-dashboard",
+	"displayValueWasSetByUser": 0,
+	"iconImageName": "brackets_orange"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,

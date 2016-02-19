@@ -10,10 +10,10 @@
     }
     .logo {
         @include size(180px, 50px);
-        @include absolute(0,null,0,-12px);
+        @include absolute(0,null,0,12px);
         margin: auto;
         &:before {
-            content:url('../images/logo-plain.svg');
+            content:url('../images/logo.svg');
             display: block;
         }
         @include breakpoint($mobile) {

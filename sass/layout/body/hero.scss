@@ -25,6 +25,7 @@
         z-index: 1;
     }
     &.All {
+        padding: 72px 24px 97px;
         .background__screen {
             background: transparentize($primary-color, .1);
         }

@@ -306,18 +306,18 @@ $grey-four: darken($grey-one, 18%);
 $border-color: #E7E8EA;
 
 // Pallette 
-// $primary-color: #ACC1EF;
-// $second-color: #DBB8F2;
-// $third-color: #FE9C9D;
-// $fourth-color: #7FECD2;
-// $fifth-color: #7FECD2;
+$primary-color: $skookum-black;
+$second-color: $skookum-red;
+$third-color: $skookum-orange;
+$fourth-color: $skookum-yellow;
+$fifth-color: $fourth-color;
 
 // Pallette 
-$primary-color: #434B6F;
-$second-color: #34DBBA;
-$third-color: #B87DF4;
-$fourth-color: #FFBC66;
-$fifth-color: $second-color;
+// $primary-color: #5dc3e4;
+// $second-color: #34DBBA;
+// $third-color: #B87DF4;
+// $fourth-color: #FFBC66;
+// $fifth-color: $second-color;
 
 $text: lighten($skookum-black, 20%);
 $header: $skookum-black;
