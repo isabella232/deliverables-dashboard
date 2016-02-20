@@ -11,7 +11,7 @@ $('.deliverable .deliverable__tag').each(function() {
 
 $('.deliverable__bucket').each(function() {
     var bucketClass = $(this).find('span').text().toLowerCase();
-    var bucketClassUC = $(this).find('span').text().toUpperCase();
+    var bucketClassUC = $(this).find('span').text();
     $(this).addClass(bucketClass).parent().parent().parent().addClass(bucketClassUC);
 });
 

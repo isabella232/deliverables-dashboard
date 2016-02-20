@@ -1,0 +1,101 @@
+{
+  "name": "Name of Client Engagement",
+  "slug": "client-final-deliverable",
+  "description": "This dashboard is a place for our client to access the latest versions of all deliverables from the Skookum team. Documents will be updated to the most recent version as changes are needed.",
+  "theme": "main",
+  "deliverables": [
+    {
+      "name": "POC Native App - Beacon Proximity Detections",
+      "date": "February 3, 2016",
+      "description": "The documentation says Beacon, but open to all the other options, start considering options from Scratch.",
+      "buckets": [
+        "Design",
+        "Strategy",
+        "Tech"
+      ],
+      "tags": [
+        "PDF",
+        "Documentation"
+      ],
+      "url": "https://dribbble.com/RobLukeDesign"
+    },
+    {
+      "name": "iOS App Hi Fidelities",
+      "date": "February 4, 2016",
+      "description": "Application flow that includes our unique chat interface with a clean and easy to use standard UI existing in conjunction with it",
+      "buckets": [
+        "Design"
+      ],
+      "tags": [
+        "Sketch"
+      ],
+      "url": "deliverables/Process.pdf"
+    },
+    {
+      "name": "iOS App Hi Fidelities",
+      "date": "February 4, 2016",
+      "description": "Original Sketch file with multiple pages of wireframes, hi fidelities, icons and assets",
+      "buckets": [
+        "Design"
+      ],
+      "tags": [
+        "Sketch",
+        "UX"
+      ],
+      "url": "deliverables/Process.pdf"
+    },
+    {
+      "name": "Some Spreadsheet",
+      "date": "February 14, 2016",
+      "description": "This is a spreadsheet.",
+      "buckets": [
+        "Strategy"
+      ],
+      "tags": [
+        "Documentation",
+        "XLS"
+      ],
+      "url": "deliverables/spreadsheet.xls"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Design",
+      "icon": "images/buckets/design.svg",
+      "type": "bucket"
+    },
+    {
+      "name": "Strategy",
+      "icon": "images/buckets/strategy.svg",
+      "type": "bucket"
+    },
+    {
+      "name": "Tech",
+      "icon": "images/buckets/tech-dark.svg",
+      "type": "bucket"
+    }
+  ],
+  "heroes": [
+    {
+      "name": "Rob Luke",
+      "intro": "Your Skookum Designer",
+      "description": "Designers are responsible for usability, layout and visual design of the product. Other responsibilities include stakeholder presentations, design workshop direction and adhering to brand guidelines.",
+      "avatar": "images/avatars/luke.png",
+      "bucket": "Design"
+    },
+    {
+      "name": "Danielle Long",
+      "intro": "Your Skookum Stratagist",
+      "description": "Product Strategists are responsible for uncovering business objectives, understanding user needs, translating those needs into prioritized features and conveying the product vision.",
+      "avatar": "images/avatars/long.jpg",
+      "bucket": "Strategy"
+    },
+    {
+      "name": "Trey Robinson",
+      "intro": "Your Skookum Developer",
+      "description": "Engineering Consultants are responsible for uncovering current technology state, defining constraints and mitigating risk in order to establish an overall technical recommendation.",
+      "avatar": "images/avatars/robinson.jpg",
+      "bucket": "Tech"
+    }
+  ]
+}
