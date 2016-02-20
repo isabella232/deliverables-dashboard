@@ -19,80 +19,43 @@ html
                     .background__screen
                     .hero__content.hero__all
                         .hero__title
-                            h2.h2 Client Final Deliverable
-                        p.hero__description This dashboard is a place for our client to access the latest versions of all deliverables from the Skookum team. Documents will be updated to the most recent version as changes are needed.
-                    .hero__content.hero__design
-                        .hero__details
-                            .image
-                                img(src='images/avatars/luke.png')
-                            p.hero__intro Your Skookum Designer
-                            .hero__title
-                                h2.h2 Rob Luke
-                            p.hero__description Designers are responsible for usability, layout and visual design of the product. Other responsibilities include stakeholder presentations, design workshop direction and adhering to brand guidelines.
-                    .hero__content.hero__strategy
-                        .hero__details
-                            .image
-                                img(src='images/avatars/long.jpg')
-                            p.hero__intro Your Skookum Stratagist
-                            .hero__title
-                                h2.h2 Danielle Long
-                            p.hero__description Product Strategists are responsible for uncovering business objectives, understanding user needs, translating those needs into prioritized features and conveying the product vision.
-                    .hero__content.hero__tech
-                        .hero__details
-                            .image
-                                img(src='images/avatars/robinson.jpg')
-                            p.hero__intro Your Skookum Developer
-                            .hero__title
-                                h2.h2 Trey Robinson
-                            p.hero__description Engineering Consultants are responsible for uncovering current technology state, defining constraints and mitigating risk in order to establish an overall technical recommendation
-                +deliverable(
-                    'POC Native App - Beacon Proximity Detections',
-                    'The documentation says Beacon, but open to all the other options, start considering options from Scratch',
-                    'February 2, 2016',
-                    ['design', 'strategy', 'tech'],
-                    ['PDF', 'Documentation'],
-                    'https://dribbble.com/RobLukeDesign'
-                )
-                +deliverable(
-                    'iOS App Hi Fidelities',
-                    'Application flow that includes our unique chat interface with a clean and easy to use standard UI existing in conjunction with it',
-                    'February 4, 2016',
-                    ['design', 'strategy'],
-                    ['PDF', 'Documentation'],
-                    'deliverables/Process.pdf'
-                )
-                +deliverable(
-                    'iOS App Original Hi Fidelities',
-                    'Original Sketch file with multiple pages of wireframes, hi fidelities, icons and assets',
-                    'February 4, 2016',
-                    ['design'],
-                    ['Sketch'],
-                    'deliverables/Illustrations.sketch'
-                )
-                +deliverable(
-                    'POC Original Hi Fidelities',
-                    'Original Sketch file with multiple pages of wireframes, hi fidelities, icons and assets',
-                    'January 27, 2016',
-                    ['design'],
-                    ['Sketch'],
-                    'deliverables/Illustrations.sketch'
-                )
-                +deliverable(
-                    'title',
-                    'description',
-                    'date',
-                    [''],
-                    [''],
-                    '#'
-                )
-                +deliverable(
-                    'title',
-                    'description',
-                    'date',
-                    [''],
-                    [''],
-                    '#'
-                )
+                            h2.h2 #{name}
+                        p.hero__description #{description} 
+                    each hero in heroes || []
+                        div(class="hero__content hero__#{ hero.bucket.toLowerCase() }")
+                            .hero__details
+                                .image
+                                    img(src='#{ hero.avatar }') 
+                                p.hero__intro= hero.intro
+                                .hero__title
+                                    h2.h2= hero.name
+                                p.hero__description= hero.description
+                -
+                    for (var i = 0; i < (deliverables || []).length; i++) {
+                        deliverables[i].buckets = (deliverables[i].buckets || []).map(function(b) {
+                            for (var q = 0; q < buckets.length; q++) {
+                                if (buckets[q].name === b) {
+                                    return buckets[q].slug;
+                                }
+                            }
+                        });
+                        deliverables[i].tags = (deliverables[i].tags || []).map(function(b) {
+                            for (var q = 0; q < validTags.length; q++) {
+                                if (validTags[q].name === b) {
+                                    return validTags[q].slug;
+                                }
+                            }
+                        });
+                    }
+                each del in deliverables || []
+                    +deliverable(
+                        del.name,
+                        del.description,
+                        del.date || '',
+                        del.buckets,
+                        del.tags,
+                        del.url
+                    )
 
 
 
