@@ -28,6 +28,8 @@ $('.bucket').click(function() {
         $('.deliverable').removeClass('is-active').hide();
         $('.deliverable.' + bucket).show().addClass('is-active');
         $('.hero').removeClass().addClass('hero ' + title);
+        $('.hero__content').hide();
+        $('.hero__' + title.toLowerCase()).show();
     }
     
     $('.bucket').removeClass('is-active');
