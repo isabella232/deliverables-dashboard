@@ -1,3 +1,73 @@
+-
+    Array.prototype.getUnique = function(){
+        var u = {}, a = [];
+        for(var i = 0, l = this.length; i < l; ++i){
+          if(u.hasOwnProperty(this[i])) {
+             continue;
+          }
+          a.push(this[i]);
+          u[this[i]] = 1;
+        }
+        return a;
+    }
+
+    String.prototype.toSlug = function(){
+        st = this.toLowerCase();
+        st = st.replace(/[\u00C0-\u00C5]/ig,'a')
+        st = st.replace(/[\u00C8-\u00CB]/ig,'e')
+        st = st.replace(/[\u00CC-\u00CF]/ig,'i')
+        st = st.replace(/[\u00D2-\u00D6]/ig,'o')
+        st = st.replace(/[\u00D9-\u00DC]/ig,'u')
+        st = st.replace(/[\u00D1]/ig,'n')
+        st = st.replace(/[^a-z0-9 ]+/gi,'')
+        st = st.trim().replace(/ /g,'-');
+        st = st.replace(/[\-]{2}/g,'');
+        return (st.replace(/[^a-z\- ]*/gi,''));
+    }
+
+    function hydrateTag(tagName, bucket) {
+        var fullTag = {
+            "name": tagName,
+            "slug": bucket ? tagName.toSlug().toUpperCase() : tagName.toSlug().toLowerCase(),
+            "icon": bucket ? "images/buckets/all.svg" : "images/buckets/tag.svg"
+        };
+        for (var i = 0; i < tags.length; i++) {
+            if (tags[i].name === tagName) {
+                fullTag.slug = typeof tags[i].slug !== "undefined" ? tags[i].slug : fullTag.slug;
+                fullTag.icon = typeof tags[i].icon !== "undefined" ? tags[i].icon : fullTag.icon;
+            }
+        }
+        if (!bucket) {
+            fullTag.buckets = [];
+            for (var i = 0; i < deliverables.length; i++) {
+                if (~deliverables[i].tags.indexOf(tagName)) {
+                    fullTag.buckets = fullTag.buckets.concat(deliverables[i].buckets);
+                }
+            }
+            fullTag.buckets = [].concat.apply([], fullTag.buckets).getUnique().sort();
+            fullTag.buckets = fullTag.buckets.map(function(bucket) {
+                for (var i = 0; i < buckets.length; i++) {
+                    if (buckets[i].name === bucket) {
+                        return buckets[i].slug;
+                    }
+                }
+            });
+        }
+        
+        return fullTag;
+    }
+
+    var buckets = (deliverables || []).map(function(v){ return v.buckets || []; });
+    buckets = buckets.map(function(v) { return v; });
+    buckets = [].concat.apply([], buckets).getUnique().sort();
+    buckets = buckets.map(function(b) { return hydrateTag(b, true); });
+    console.log(buckets);
+
+    var validTags = (deliverables || []).map(function(v){ return v.tags || []; });
+    validTags = validTags.map(function(v) { return v; });
+    validTags = [].concat.apply([], validTags).getUnique().sort();
+    validTags = validTags.map(function(b) { return hydrateTag(b); });
+    console.log(validTags);
 
 .navigation
     nav.buckets
@@ -7,63 +77,21 @@
                     span.bucket__icon
                         img(src='images/buckets/all.svg')
                     p.bucket__name All
-            li.bucket.DESIGN
-                a(href="#").bucket__anchor
-                    span.bucket__icon
-                        img(src='images/buckets/design.svg')
-                    p.bucket__name Design
-            li.bucket.STRATEGY
-                a(href="#").bucket__anchor
-                    span.bucket__icon
-                        img(src='images/buckets/strategy.svg')
-                    p.bucket__name Strategy
-            li.bucket.TECH
-                a(href="#").bucket__anchor
-                    span.bucket__icon
-                        img(src='images/buckets/tech-dark.svg')
-                    p.bucket__name Tech
+            each bucket in buckets || []
+                li(class="bucket #{bucket.slug}")
+                    a(href="#").bucket__anchor
+                        span.bucket__icon
+                            img(src='#{bucket.icon}')
+                        p.bucket__name= bucket.name
+
     nav.tags
         ul
-            li.tag.DESIGN.STRATEGY.TECH
-                a(href="#").branding
-                    .tag__icon
-                        img(src='images/buckets/tag.svg')
-                    .tag__name Branding
-            li.tag.STRATEGY.TECH
-                a(href="#").documentation
-                    .tag__icon 
-                        img(src='images/buckets/tag.svg')
-                    .tag__name Documentation
-            li.tag.DESIGN.STRATEGY
-                a(href="#").link
-                    .tag__icon 
-                        img(src='images/buckets/tag.svg')
-                    .tag__name Link
-            li.tag.TECH.DESIGN.STRATEGY
-                a(href="#").pdf
-                    .tag__icon 
-                        img(src='images/buckets/tag.svg')
-                    .tag__name PDF
-            li.tag.DESIGN
-                a(href="#").sketch
-                    .tag__icon 
-                        img(src='images/buckets/tag.svg')
-                    .tag__name Sketch
-            li.tag.DESIGN
-                a(href="#").ux
-                    .tag__icon 
-                        img(src='images/buckets/tag.svg')
-                    .tag__name UX
-            li.tag.DESIGN.STRATEGY.TECH
-                a(href="#").web
-                    .tag__icon 
-                        img(src='images/buckets/tag.svg')
-                    .tag__name Web
-            li.tag.STRATEGY
-                a(href="#").xls
-                    .tag__icon 
-                        img(src='images/buckets/tag.svg')
-                    .tag__name XLS
+            each tag in validTags || []
+                li(class="tag #{tag.buckets.join(' ')}")
+                    a(href="#", class="#{tag.slug}")
+                        .tag__icon
+                            img(src="#{tag.icon}")
+                        .tag__name= tag.name
 
 
 

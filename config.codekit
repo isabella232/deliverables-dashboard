@@ -11,6 +11,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/data\/engagement.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/data\/engagement.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/data\/engagement-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/images\/avatars\/hager.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2869,7 +2880,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Robert Luke",
+"lastSavedByUser": "Evan Booth",
 "manualImportLinks": {
 	},
 "projectAttributes": {
