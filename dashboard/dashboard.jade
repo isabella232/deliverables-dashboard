@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title Client Login
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatable', content='IE=Edge')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no', media='(device-height: 588px)')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+    link(rel='stylesheet', type='text/css', href='css/login.css')
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,300,100,900&subset=latin', rel='stylesheet', type='text/css')
+  body
+    .container
+      h1 #{client.name} Dashboard
+      .card-container
+        each link in dashboardLinks || []
+          a.card(href='#{link.linkUrl}') #{link.linkText}
+            span.caret-right
+        a.card(href='/logout') Log Out
+            span.caret-right
+      a.logo(href='http://www.skookum.com')
+          img(src='images/skookum-logo.png')
