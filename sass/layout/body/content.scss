@@ -159,12 +159,12 @@
         .deliverable__tag {
             height: 20px;
             @include font-size(1);
-            line-height: 20px;
+            line-height: 19px;
             padding: 0 16px;
             margin-bottom: 8px;
             @include border-radius(40px);
-            background: $skookum-black;
-            color: white;
+            background: #E7E8EA;
+            color: $skookum-black;
         }
     }
 }

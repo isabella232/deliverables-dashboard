@@ -33,6 +33,9 @@
             &.STRATEGY {
                 background: $third-color;
             }
+            &.QA {
+                background: #F58826;
+            }
             &.TECH {
                 background: $fourth-color;
                 .bucket__name {color: $header}
