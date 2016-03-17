@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
     <title>design</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="design" sketch:type="MSArtboardGroup">
-            <g id="Imported-Layers" sketch:type="MSLayerGroup" transform="translate(19.998123, 19.998123) rotate(45.000000) translate(-19.998123, -19.998123) translate(16.998123, 6.498123)">
-                <path d="M0.472167478,21.8505 L2.99890155,26.61975 L5.76885066,21.8505 M1.02240398,22.7175 L1.99000951,21.75075 L2.77970774,22.5405 M3.35621748,22.527 L4.1316531,21.75225 L5.06547876,22.68525" id="Stroke-1" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
-                <path d="M3.04168938,23.3505 L2.49445553,22.78725 L3.04394137,22.25625 L3.58892323,22.82025 L3.04168938,23.3505" id="Fill-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
-                <path d="M3.04168938,23.3505 L2.49445553,22.78725 L3.04394137,22.25625 L3.58892323,22.82025 L3.04168938,23.3505" id="Fill-3" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
-                <path d="M3.36522544,23.0205 L2.8592781,22.4655 L3.42377721,21.9525 L3.92897389,22.509 L3.36522544,23.0205" id="Fill-4" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
-                <path d="M5.71255088,3.17325 L5.71255088,5.23575 L0.497690044,5.23575 L0.497690044,3.17325 C0.497690044,1.5465 1.66647345,0.23325 3.10174248,0.23325 C3.82313031,0.23325 4.47770907,0.56325 4.94612323,1.09575 C5.42354535,1.62825 5.71255088,2.36325 5.71255088,3.17325 L5.71255088,3.17325 Z M0.565249779,6.73275 L5.38225885,6.73275 L0.565249779,6.73275 Z M0.627554867,8.17125 L5.44456394,8.17125 L0.627554867,8.17125 Z M1.90218186,24.44025 L4.14291305,24.44025 L1.90218186,24.44025 Z M0.507448673,22.026 L0.507448673,4.73325 L0.507448673,22.026 Z M5.72155885,22.06125 L5.72155885,5.5455 L5.72155885,22.06125 Z" id="Stroke-5" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
-            </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="design" fill="#FFFFFF">
+            <path d="M10,1 C5.03,1 1,5.03 1,10 C1,14.97 5.03,19 10,19 C10.83,19 11.5,18.33 11.5,17.5 C11.5,17.11 11.35,16.76 11.11,16.49 C10.88,16.23 10.73,15.88 10.73,15.5 C10.73,14.67 11.4,14 12.23,14 L14,14 C16.76,14 19,11.76 19,9 C19,4.58 14.97,1 10,1 L10,1 Z M4.5,10 C3.67,10 3,9.33 3,8.5 C3,7.67 3.67,7 4.5,7 C5.33,7 6,7.67 6,8.5 C6,9.33 5.33,10 4.5,10 L4.5,10 Z M7.5,6 C6.67,6 6,5.33 6,4.5 C6,3.67 6.67,3 7.5,3 C8.33,3 9,3.67 9,4.5 C9,5.33 8.33,6 7.5,6 L7.5,6 Z M12.5,6 C11.67,6 11,5.33 11,4.5 C11,3.67 11.67,3 12.5,3 C13.33,3 14,3.67 14,4.5 C14,5.33 13.33,6 12.5,6 L12.5,6 Z M15.5,10 C14.67,10 14,9.33 14,8.5 C14,7.67 14.67,7 15.5,7 C16.33,7 17,7.67 17,8.5 C17,9.33 16.33,10 15.5,10 L15.5,10 Z"></path>
         </g>
     </g>
 </svg>

@@ -32,6 +32,10 @@
             display: block;
         }
     }
+    .exit {
+        @include absolute(24px,24px,0,null);
+        cursor: pointer;
+    }
     h1.h1 {
         font-size: 24px;
         line-height: $bucket-width - 1;

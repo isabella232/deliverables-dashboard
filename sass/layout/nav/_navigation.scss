@@ -45,7 +45,7 @@
             @include transition(background 200ms ease-in-out);
         }
         .bucket__icon {
-            @include square(40px);
+            @include square(20px);
             display: block;
             @include absolute(-20px,0,0,0);
             margin: auto;
@@ -82,8 +82,8 @@
             .tag__icon {
                 float: left;
                 img {
-                    @include square(40px);
-                    @include absolute(-2px,0,0,8px);
+                    @include square(24px);
+                    @include absolute(-2px,0,0,16px);
                     margin: auto 0;
                 }
             }

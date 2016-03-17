@@ -11,10 +11,9 @@
 .deliverable {
     position: relative;
     @include span(4 of 12);
-    padding-bottom: 36%;
+    //padding-bottom: 33%;
     border-right: $border;
     border-bottom: $border;
-    //@include animate(grow cubic-bezier(.1,.6,.3,1.05) 200ms);
     &.hide {
         display: none !important;
     }
@@ -27,31 +26,51 @@
             @include inset-shadow(0,1px,0,#E7E8EA);
         }
     }
+    @include breakpoint($superwide) {
+        @include span(3 of 12);
+        // padding-bottom: 40%;
+        height: 350px;
+    }
+    @include breakpoint($extrawide) {
+        @include span(3 of 12);
+        // padding-bottom: 40%;
+        height: 400px;
+    }
+    @include breakpoint($wide) {
+        @include span(3 of 12);
+        // padding-bottom: 40%;
+        height: 440px;
+    }
     @include breakpoint($TV) {
         @include span(4 of 12);
-        padding-bottom: 40%;
+        // padding-bottom: 30%;
+        height: 400px;
     }
     @include breakpoint($desktop) {
         @include span(4 of 12);
-        padding-bottom: 49%;
+        // padding-bottom: 49%;
+        height: 400px;
     }
     @include breakpoint($laptop) {
         @include span(6 of 12);
-        padding-bottom: 49%;
+        // padding-bottom: 49%;
+        height: 350px;
     }
     @include breakpoint($portable-landscape-wide) {
         @include span(6 of 12);
-        padding-bottom: 58%;
+        // padding-bottom: 58%;
+        height: 400px;
     }
     @include breakpoint($portable-landscape) {
         @include span(12 of 12);
         padding: 0px 24px 12px;
+        height: auto;
     }
 }
 
 .deliverable__content {
     @include absolute(0,0,0,0);
-    padding: 24px;
+    padding: 0 24px;
     @include breakpoint($portable-landscape) {
         position: relative;
         padding: 0;
@@ -61,7 +80,7 @@
     }
     .deliverable__buckets {
         @include clearfix();
-        padding: 24px 0;
+        padding: 32px 0;
         li {
             float: left;
             display: inline-block;
@@ -71,7 +90,7 @@
             margin-right: 16px;
             &:after {
                 display: block;
-                @include square(40px);
+                @include square(20px);
                 @include absolute(0,0,0,0);
                 margin: auto;
             }

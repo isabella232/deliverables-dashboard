@@ -11,5 +11,8 @@ $hover-zone: 1025px 3000px;
 $laptop: max-width 1124px;
 $desktop: max-width 1240px;
 $TV: max-width 1300px;
+$wide: max-width 1500px;
+$extrawide: max-width 1800px;
+$superwide: max-width 2200px;
 // string tests together within parentheses, assume each item is a feature value pair
 $surfboard-height: (min-height 1000px) (orientation portrait);
