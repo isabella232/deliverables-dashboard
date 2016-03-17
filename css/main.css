@@ -376,8 +376,8 @@ h1, h2, h3, h4, h5, h6 {
         display: block; } }
   .header .exit {
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 26px;
+    right: 22px;
     bottom: 0;
     cursor: pointer; }
   .header h1.h1 {
