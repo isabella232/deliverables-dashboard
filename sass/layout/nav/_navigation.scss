@@ -40,18 +40,22 @@
             // &:nth-child(5) {
             //     background: $second-color;
             // }
-            &.DESIGN {
+            &.DESIGN,
+            &.RESEARCH {
                 background: $second-color;
             }
-            &.STRATEGY {
+            &.STRATEGY,
+            &.EXERCISES {
                 background: $third-color;
             }
-            &.QA {
-                background: #8FCF4A;
-            }
-            &.TECH {
+            &.TECH,
+            &.UX {
                 background: $fourth-color;
-                .bucket__name {color: $header}
+                // .bucket__name {color: $header}
+            }
+            &.QA,
+            &.SUMMARY {
+                background: #8FCF4A;
             }
         }
         .bucket__anchor {

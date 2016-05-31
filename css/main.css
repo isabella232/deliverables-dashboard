@@ -423,16 +423,14 @@ h1, h2, h3, h4, h5, h6 {
           bottom: 3px; }
       .navigation .buckets .bucket.all {
         background: #253238; }
-      .navigation .buckets .bucket.DESIGN {
+      .navigation .buckets .bucket.DESIGN, .navigation .buckets .bucket.RESEARCH {
         background: #F16521; }
-      .navigation .buckets .bucket.STRATEGY {
+      .navigation .buckets .bucket.STRATEGY, .navigation .buckets .bucket.EXERCISES {
         background: #FAAB18; }
-      .navigation .buckets .bucket.QA {
-        background: #8FCF4A; }
-      .navigation .buckets .bucket.TECH {
+      .navigation .buckets .bucket.TECH, .navigation .buckets .bucket.UX {
         background: #FFDD2E; }
-        .navigation .buckets .bucket.TECH .bucket__name {
-          color: #253238; }
+      .navigation .buckets .bucket.QA, .navigation .buckets .bucket.SUMMARY {
+        background: #8FCF4A; }
     .navigation .buckets .bucket__anchor {
       width: 100%;
       height: 100%;
@@ -1118,19 +1116,21 @@ h1, h2, h3, h4, h5, h6 {
       background: rgba(37, 50, 56, 0.9); }
     .hero.All .hero__all {
       display: block; }
-  .hero.Design .background__screen {
+  .hero.Design .background__screen, .hero.Research .background__screen {
     background: rgba(241, 101, 33, 0.9); }
-  .hero.Design .hero__design {
+  .hero.Design .hero__design, .hero.Research .hero__design {
     display: block; }
-  .hero.Strategy .background__screen {
+  .hero.Strategy .background__screen, .hero.Exercises .background__screen {
     background: rgba(250, 171, 24, 0.9); }
-  .hero.Strategy .hero__strategy {
+  .hero.Strategy .hero__strategy, .hero.Exercises .hero__strategy {
     display: block; }
-  .hero.Tech .background__screen {
+  .hero.Tech .background__screen, .hero.UX .background__screen {
     background: rgba(255, 221, 46, 0.9); }
-  .hero.Tech h2.h2, .hero.Tech p, .hero.Tech span {
-    color: #253238; }
-  .hero.Tech .hero__tech {
+  .hero.Tech .hero__tech, .hero.UX .hero__tech {
+    display: block; }
+  .hero.Qa .background__screen, .hero.Summary .background__screen {
+    background: rgba(143, 207, 74, 0.9); }
+  .hero.Qa .hero__strategy, .hero.Summary .hero__strategy {
     display: block; }
   .hero h2.h2, .hero p, .hero span {
     color: white; }
