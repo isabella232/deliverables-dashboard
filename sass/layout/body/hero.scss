@@ -33,13 +33,13 @@
     }
     &.Design {
         .background__screen {
-            // background: transparentize($second-color, .1);
+            background: transparentize($second-color, .1);
         }
         .hero__design {display: block}
     }
     &.Strategy {
         .background__screen {
-            // background: transparentize($third-color, .1);
+            background: transparentize($third-color, .1);
         }
         .hero__strategy {display: block}
     }
