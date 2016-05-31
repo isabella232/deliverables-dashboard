@@ -15,7 +15,51 @@ $('.deliverable__bucket').each(function() {
     $(this).addClass(bucketClass).parent().parent().parent().addClass(bucketClassUC);
 });
 
+$('.bucket__name:contains("1-")').each(function(){
+    $(this).html($(this).html().split("1-").join(""));
+});
+$('.bucket__name:contains("2-")').each(function(){
+    $(this).html($(this).html().split("2-").join(""));
+});
+$('.bucket__name:contains("3-")').each(function(){
+    $(this).html($(this).html().split("3-").join(""));
+});
+$('.bucket__name:contains("4-")').each(function(){
+    $(this).html($(this).html().split("4-").join(""));
+});
+$('.bucket__name:contains("5-")').each(function(){
+    $(this).html($(this).html().split("5-").join(""));
+});
+$('.bucket__name:contains("6-")').each(function(){
+    $(this).html($(this).html().split("6-").join(""));
+});
+$('.bucket__name:contains("7-")').each(function(){
+    $(this).html($(this).html().split("7-").join(""));
+});
+
 $('.bucket').click(function() {
+    $('.bucket__name:contains("1-")').each(function(){
+        $(this).html($(this).html().split("1-").join(""));
+    });
+    $('.bucket__name:contains("2-")').each(function(){
+        $(this).html($(this).html().split("2-").join(""));
+    });
+    $('.bucket__name:contains("3-")').each(function(){
+        $(this).html($(this).html().split("3-").join(""));
+    });
+    $('.bucket__name:contains("4-")').each(function(){
+        $(this).html($(this).html().split("4-").join(""));
+    });
+    $('.bucket__name:contains("5-")').each(function(){
+        $(this).html($(this).html().split("5-").join(""));
+    });
+    $('.bucket__name:contains("6-")').each(function(){
+        $(this).html($(this).html().split("6-").join(""));
+    });
+    $('.bucket__name:contains("7-")').each(function(){
+        $(this).html($(this).html().split("7-").join(""));
+    });
+
     var title = $(this).find('.bucket__name').text();
     var bucket = $(this).attr('class').replace('bucket ', '');
 
@@ -65,30 +109,6 @@ $('.burger').click(function() {
     else {
         $('body').removeClass('nav-show').addClass('nav-hide');
     }
-});
-
-
-
-$('.bucket__name:contains("1-")').each(function(){
-    $(this).html($(this).html().split("1-").join(""));
-});
-$('.bucket__name:contains("2-")').each(function(){
-    $(this).html($(this).html().split("2-").join(""));
-});
-$('.bucket__name:contains("3-")').each(function(){
-    $(this).html($(this).html().split("3-").join(""));
-});
-$('.bucket__name:contains("4-")').each(function(){
-    $(this).html($(this).html().split("4-").join(""));
-});
-$('.bucket__name:contains("5-")').each(function(){
-    $(this).html($(this).html().split("5-").join(""));
-});
-$('.bucket__name:contains("6-")').each(function(){
-    $(this).html($(this).html().split("6-").join(""));
-});
-$('.bucket__name:contains("7-")').each(function(){
-    $(this).html($(this).html().split("7-").join(""));
 });
 
 $('.deliverable__bucket span:empty').parent().hide();
