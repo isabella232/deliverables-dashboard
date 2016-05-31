@@ -1122,6 +1122,8 @@ h1, h2, h3, h4, h5, h6 {
     display: block; }
   .hero.Strategy .hero__strategy {
     display: block; }
+  .hero.Tech .background__screen {
+    background: rgba(255, 221, 46, 0.9); }
   .hero.Tech h2.h2, .hero.Tech p, .hero.Tech span {
     color: #253238; }
   .hero.Tech .hero__tech {
