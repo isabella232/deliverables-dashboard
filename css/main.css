@@ -1019,7 +1019,7 @@ h1, h2, h3, h4, h5, h6 {
       .deliverable__content .deliverable__buckets li.deliverable__bucket.research {
         background: #F16521; }
         .deliverable__content .deliverable__buckets li.deliverable__bucket.research:after {
-          content: url("../images/buckets/bulb.svg"); }
+          content: url("../images/buckets/strategy.svg"); }
       .deliverable__content .deliverable__buckets li.deliverable__bucket.exercises {
         background: #FAAB18; }
         .deliverable__content .deliverable__buckets li.deliverable__bucket.exercises:after {
@@ -1027,7 +1027,7 @@ h1, h2, h3, h4, h5, h6 {
       .deliverable__content .deliverable__buckets li.deliverable__bucket.ux {
         background: #FFDD2E; }
         .deliverable__content .deliverable__buckets li.deliverable__bucket.ux:after {
-          content: url("../images/buckets/palette.svg"); }
+          content: url("../images/buckets/design.svg"); }
       .deliverable__content .deliverable__buckets li.deliverable__bucket.summary {
         background: #8FCF4A; }
         .deliverable__content .deliverable__buckets li.deliverable__bucket.summary:after {

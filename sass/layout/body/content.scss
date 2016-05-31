@@ -118,7 +118,7 @@
             &.deliverable__bucket.research {
                 background: $second-color;
                 &:after {
-                    content:url('../images/buckets/bulb.svg');
+                    content:url('../images/buckets/strategy.svg');
                 }
             }
             &.deliverable__bucket.exercises {
@@ -130,7 +130,7 @@
             &.deliverable__bucket.ux {
                 background: $fourth-color;
                 &:after {
-                    content:url('../images/buckets/palette.svg');
+                    content:url('../images/buckets/design.svg');
                 }
             }
             &.deliverable__bucket.summary {
