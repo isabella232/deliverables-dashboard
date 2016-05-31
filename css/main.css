@@ -1015,7 +1015,7 @@ h1, h2, h3, h4, h5, h6 {
       .deliverable__content .deliverable__buckets li.deliverable__bucket.tech {
         background: #FFDD2E; }
         .deliverable__content .deliverable__buckets li.deliverable__bucket.tech:after {
-          content: url("../images/buckets/tech-dark.svg"); }
+          content: url("../images/buckets/tech.svg"); }
       .deliverable__content .deliverable__buckets li.deliverable__bucket.research {
         background: #F16521; }
         .deliverable__content .deliverable__buckets li.deliverable__bucket.research:after {
