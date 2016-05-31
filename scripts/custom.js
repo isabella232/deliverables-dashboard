@@ -4,29 +4,6 @@
 //     e.preventDefault();
 //     return false;
 // });
-
-$('.bucket__name:contains("1-")').each(function(){
-    $(this).html($(this).html().split("1-").join(""));
-});
-$('.bucket__name:contains("2-")').each(function(){
-    $(this).html($(this).html().split("2-").join(""));
-});
-$('.bucket__name:contains("3-")').each(function(){
-    $(this).html($(this).html().split("3-").join(""));
-});
-$('.bucket__name:contains("4-")').each(function(){
-    $(this).html($(this).html().split("4-").join(""));
-});
-$('.bucket__name:contains("5-")').each(function(){
-    $(this).html($(this).html().split("5-").join(""));
-});
-$('.bucket__name:contains("6-")').each(function(){
-    $(this).html($(this).html().split("6-").join(""));
-});
-$('.bucket__name:contains("7-")').each(function(){
-    $(this).html($(this).html().split("7-").join(""));
-});
-
 $('.deliverable .deliverable__tag').each(function() {
     var filter = $(this).text().toLowerCase();
     $(this).parent().parent().parent().addClass(filter);
@@ -91,5 +68,27 @@ $('.burger').click(function() {
 });
 
 
+
+// $('.bucket__name:contains("1-")').each(function(){
+//     $(this).html($(this).html().split("1-").join(""));
+// });
+// $('.bucket__name:contains("2-")').each(function(){
+//     $(this).html($(this).html().split("2-").join(""));
+// });
+// $('.bucket__name:contains("3-")').each(function(){
+//     $(this).html($(this).html().split("3-").join(""));
+// });
+// $('.bucket__name:contains("4-")').each(function(){
+//     $(this).html($(this).html().split("4-").join(""));
+// });
+// $('.bucket__name:contains("5-")').each(function(){
+//     $(this).html($(this).html().split("5-").join(""));
+// });
+// $('.bucket__name:contains("6-")').each(function(){
+//     $(this).html($(this).html().split("6-").join(""));
+// });
+// $('.bucket__name:contains("7-")').each(function(){
+//     $(this).html($(this).html().split("7-").join(""));
+// });
 
 $('.deliverable__bucket span:empty').parent().hide();
