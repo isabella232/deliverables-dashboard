@@ -31,6 +31,26 @@
         }
         .hero__all {display: block}
     }
+    &:nth-child(1) {
+        .background__screen {
+            background: transparentize($second-color, .1);
+        }
+    }
+    &:nth-child(2) {
+        .background__screen {
+            background: transparentize($third-color, .1);
+        }
+    }
+    &:nth-child(3) {
+        .background__screen {
+            background: transparentize($fourth-color, .1);
+        }
+    }
+    &:nth-child(4) {
+        .background__screen {
+            background: transparentize($second-color, .1);
+        }
+    }
     &.Design {
         .background__screen {
             background: transparentize($second-color, .1);

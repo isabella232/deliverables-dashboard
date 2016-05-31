@@ -423,6 +423,14 @@ h1, h2, h3, h4, h5, h6 {
           bottom: 3px; }
       .navigation .buckets .bucket.all {
         background: #253238; }
+      .navigation .buckets .bucket:nth-child(2) {
+        background: #F16521; }
+      .navigation .buckets .bucket:nth-child(3) {
+        background: #FAAB18; }
+      .navigation .buckets .bucket:nth-child(4) {
+        background: #FFDD2E; }
+      .navigation .buckets .bucket:nth-child(5) {
+        background: #F16521; }
       .navigation .buckets .bucket.DESIGN {
         background: #F16521; }
       .navigation .buckets .bucket.STRATEGY {
@@ -1118,6 +1126,14 @@ h1, h2, h3, h4, h5, h6 {
       background: rgba(37, 50, 56, 0.9); }
     .hero.All .hero__all {
       display: block; }
+  .hero:nth-child(1) .background__screen {
+    background: rgba(241, 101, 33, 0.9); }
+  .hero:nth-child(2) .background__screen {
+    background: rgba(250, 171, 24, 0.9); }
+  .hero:nth-child(3) .background__screen {
+    background: rgba(255, 221, 46, 0.9); }
+  .hero:nth-child(4) .background__screen {
+    background: rgba(241, 101, 33, 0.9); }
   .hero.Design .background__screen {
     background: rgba(241, 101, 33, 0.9); }
   .hero.Design .hero__design {
