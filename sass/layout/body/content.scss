@@ -115,6 +115,30 @@
                     content:url('../images/buckets/tech-dark.svg');
                 }
             }
+            &.deliverable__bucket.research {
+                background: $second-color;
+                &:after {
+                    content:url('../images/buckets/bulb.svg');
+                }
+            }
+            &.deliverable__bucket.exercises {
+                background: $third-color;
+                &:after {
+                    content:url('../images/buckets/barbell.svg');
+                }
+            }
+            &.deliverable__bucket.ux {
+                background: $fourth-color;
+                &:after {
+                    content:url('../images/buckets/palette.svg');
+                }
+            }
+            &.deliverable__bucket.summary {
+                background: #8FCF4A;
+                &:after {
+                    content:url('../images/buckets/clipboard.svg');
+                }
+            }
         }
     }
     h2.h2 {
