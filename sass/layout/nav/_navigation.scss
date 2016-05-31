@@ -17,6 +17,7 @@
             &.is-active a {
                 background: rgba(255,255,255,0.15);
                 @include square(86%);
+                @include border-radius(2px);
                 margin: auto;
                 position: relative;
                 top: 7%;

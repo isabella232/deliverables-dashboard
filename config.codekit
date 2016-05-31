@@ -64,6 +64,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/avatars\/All.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6296,
+		"inputAbbreviatedPath": "\/images\/avatars\/All.png",
+		"outputAbbreviatedPath": "\/images\/avatars\/All.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatars\/barbell.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1972,
+		"inputAbbreviatedPath": "\/images\/avatars\/barbell.png",
+		"outputAbbreviatedPath": "\/images\/avatars\/barbell.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatars\/bulb.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4159,
+		"inputAbbreviatedPath": "\/images\/avatars\/bulb.png",
+		"outputAbbreviatedPath": "\/images\/avatars\/bulb.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatars\/clipboard.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2641,
+		"inputAbbreviatedPath": "\/images\/avatars\/clipboard.png",
+		"outputAbbreviatedPath": "\/images\/avatars\/clipboard.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatars\/daniels.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5576,
+		"inputAbbreviatedPath": "\/images\/avatars\/daniels.jpg",
+		"outputAbbreviatedPath": "\/images\/avatars\/daniels.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/avatars\/hager.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -108,6 +163,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/avatars\/palette.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5152,
+		"inputAbbreviatedPath": "\/images\/avatars\/palette.png",
+		"outputAbbreviatedPath": "\/images\/avatars\/palette.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/avatars\/robinson.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -119,6 +185,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/avatars\/rome.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11255,
+		"inputAbbreviatedPath": "\/images\/avatars\/rome.jpg",
+		"outputAbbreviatedPath": "\/images\/avatars\/rome.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/avatars\/scott.jpeg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -126,6 +203,28 @@
 		"initialSize": 5762,
 		"inputAbbreviatedPath": "\/images\/avatars\/scott.jpeg",
 		"outputAbbreviatedPath": "\/images\/avatars\/scott.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatars\/simerman.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11113,
+		"inputAbbreviatedPath": "\/images\/avatars\/simerman.jpg",
+		"outputAbbreviatedPath": "\/images\/avatars\/simerman.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/avatars\/tsu.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5774,
+		"inputAbbreviatedPath": "\/images\/avatars\/tsu.jpg",
+		"outputAbbreviatedPath": "\/images\/avatars\/tsu.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

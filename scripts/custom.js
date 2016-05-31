@@ -88,3 +88,5 @@ $('.bucket__name:contains("6-")').each(function(){
 $('.bucket__name:contains("7-")').each(function(){
     $(this).html($(this).html().split("7-").join(""));
 });
+
+$('.deliverable__bucket span:empty').parent().hide();
