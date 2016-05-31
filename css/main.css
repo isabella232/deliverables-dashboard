@@ -1016,6 +1016,22 @@ h1, h2, h3, h4, h5, h6 {
         background: #FFDD2E; }
         .deliverable__content .deliverable__buckets li.deliverable__bucket.tech:after {
           content: url("../images/buckets/tech-dark.svg"); }
+      .deliverable__content .deliverable__buckets li.deliverable__bucket.research {
+        background: #F16521; }
+        .deliverable__content .deliverable__buckets li.deliverable__bucket.research:after {
+          content: url("../images/buckets/bulb.svg"); }
+      .deliverable__content .deliverable__buckets li.deliverable__bucket.exercises {
+        background: #FAAB18; }
+        .deliverable__content .deliverable__buckets li.deliverable__bucket.exercises:after {
+          content: url("../images/buckets/barbell.svg"); }
+      .deliverable__content .deliverable__buckets li.deliverable__bucket.ux {
+        background: #FFDD2E; }
+        .deliverable__content .deliverable__buckets li.deliverable__bucket.ux:after {
+          content: url("../images/buckets/palette.svg"); }
+      .deliverable__content .deliverable__buckets li.deliverable__bucket.summary {
+        background: #8FCF4A; }
+        .deliverable__content .deliverable__buckets li.deliverable__bucket.summary:after {
+          content: url("../images/buckets/clipboard.svg"); }
   .deliverable__content h2.h2 {
     font-size: 24px;
     font-size: 2.4rem;
