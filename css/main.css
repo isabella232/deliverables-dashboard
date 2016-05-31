@@ -1118,8 +1118,12 @@ h1, h2, h3, h4, h5, h6 {
       background: rgba(37, 50, 56, 0.9); }
     .hero.All .hero__all {
       display: block; }
+  .hero.Design .background__screen {
+    background: rgba(241, 101, 33, 0.9); }
   .hero.Design .hero__design {
     display: block; }
+  .hero.Strategy .background__screen {
+    background: rgba(250, 171, 24, 0.9); }
   .hero.Strategy .hero__strategy {
     display: block; }
   .hero.Tech .background__screen {

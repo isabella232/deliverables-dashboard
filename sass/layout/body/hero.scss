@@ -65,7 +65,7 @@
 
 
 .hero__details {
-    position: relative;
+    position: relative; 
     padding: 5% 0 5% 124px;
     @include breakpoint($portable) {
         padding-left: 0;
