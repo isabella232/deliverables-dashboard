@@ -31,7 +31,6 @@ $('.bucket').click(function() {
         $('.hero__content').hide();
         $('.hero__' + title.toLowerCase()).show();
     }
-    
     $('.bucket').removeClass('is-active');
     $(this).addClass('is-active');
     $('body').removeClass('nav-show').addClass('nav-hide');
