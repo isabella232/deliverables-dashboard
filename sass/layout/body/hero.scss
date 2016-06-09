@@ -44,8 +44,7 @@
         .background__screen {
             background: transparentize($third-color, .1);
         }
-        .hero__strategy,
-        .hero__2-exercises {display: block}
+        .hero__strategy {display: block}
     }
     &.Tech,
     &.UX {
@@ -53,16 +52,14 @@
             background: transparentize($fourth-color, .1);
         }
         // h2.h2, p, span {color: $header;}
-        .hero__tech,
-        .hero__3-ux {display: block}
+        .hero__tech {display: block}
     }
     &.Qa,
     &.Summary {
         .background__screen {
             background: transparentize(#8FCF4A, .1);
         }
-        .hero__strategy,
-        .hero__4-summary {display: block}
+        .hero__strategy {display: block}
     }
     h2.h2, p, span {color: white;}
     h2.h2 {
