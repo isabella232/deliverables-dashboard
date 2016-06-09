@@ -24,7 +24,7 @@ html
                             h2.h2 #{name}
                         p.hero__description #{description} 
                     each hero in heroes || []
-                        div(class="hero__content hero__#{ hero.bucket.toLowerCase().substring(t.indexOf('-') + 1) }")
+                        div(class="hero__content hero__#{ hero.bucket.toLowerCase().replace(/-/g, '').replace(/[0-9]/g, '')}")
                             .hero__details
                                 .image
                                     img(src='#{ hero.avatar }') 
