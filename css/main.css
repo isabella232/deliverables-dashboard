@@ -1134,19 +1134,27 @@ h1, h2, h3, h4, h5, h6 {
       display: block; }
   .hero.Design .background__screen, .hero.Research .background__screen {
     background: rgba(241, 101, 33, 0.9); }
-  .hero.Design .hero__content, .hero.Research .hero__content {
+  .hero.Design .hero__design,
+  .hero.Design .hero__1-research, .hero.Research .hero__design,
+  .hero.Research .hero__1-research {
     display: block; }
   .hero.Strategy .background__screen, .hero.Exercises .background__screen {
     background: rgba(250, 171, 24, 0.9); }
-  .hero.Strategy .hero__content, .hero.Exercises .hero__content {
+  .hero.Strategy .hero__strategy,
+  .hero.Strategy .hero__2-exercises, .hero.Exercises .hero__strategy,
+  .hero.Exercises .hero__2-exercises {
     display: block; }
   .hero.Tech .background__screen, .hero.UX .background__screen {
     background: rgba(255, 221, 46, 0.9); }
-  .hero.Tech .hero__content, .hero.UX .hero__content {
+  .hero.Tech .hero__tech,
+  .hero.Tech .hero__3-ux, .hero.UX .hero__tech,
+  .hero.UX .hero__3-ux {
     display: block; }
   .hero.Qa .background__screen, .hero.Summary .background__screen {
     background: rgba(143, 207, 74, 0.9); }
-  .hero.Qa .hero__content, .hero.Summary .hero__content {
+  .hero.Qa .hero__strategy,
+  .hero.Qa .hero__4-summary, .hero.Summary .hero__strategy,
+  .hero.Summary .hero__4-summary {
     display: block; }
   .hero h2.h2, .hero p, .hero span {
     color: white; }

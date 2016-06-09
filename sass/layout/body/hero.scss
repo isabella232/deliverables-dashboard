@@ -36,14 +36,16 @@
         .background__screen {
             background: transparentize($second-color, .1);
         }
-        .hero__content {display: block}
+        .hero__design,
+        .hero__1-research {display: block}
     }
     &.Strategy,
     &.Exercises {
         .background__screen {
             background: transparentize($third-color, .1);
         }
-        .hero__content {display: block}
+        .hero__strategy,
+        .hero__2-exercises {display: block}
     }
     &.Tech,
     &.UX {
@@ -51,14 +53,16 @@
             background: transparentize($fourth-color, .1);
         }
         // h2.h2, p, span {color: $header;}
-        .hero__content {display: block}
+        .hero__tech,
+        .hero__3-ux {display: block}
     }
     &.Qa,
     &.Summary {
         .background__screen {
             background: transparentize(#8FCF4A, .1);
         }
-        .hero__content {display: block}
+        .hero__strategy,
+        .hero__4-summary {display: block}
     }
     h2.h2, p, span {color: white;}
     h2.h2 {
