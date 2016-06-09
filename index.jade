@@ -24,7 +24,7 @@ html
                             h2.h2 #{name}
                         p.hero__description #{description} 
                     each hero in heroes || []
-                        div(class="hero__content hero__#{ hero.bucket.toLowerCase().substring(t.indexOf('-') + 1) }")
+                        div(class="hero__content hero__#{ hero.bucket.toLowerCase() }")
                             .hero__details
                                 .image
                                     img(src='#{ hero.avatar }') 
@@ -50,14 +50,14 @@ html
                         });
                         deliverables[i].display_order = deliverables[i].display_order || 99999;
                     }
-                    deliverables.sort(function(a,b) {
-                        if (a.display_order < b.display_order)
-                            return -1;
-                        else if (a.display_order > b.display_order)
-                            return 1;
-                        else 
-                            return (a.name <= b.name);
-                    });
+                    // deliverables.sort(function(a,b) {
+                    //     if (a.display_order < b.display_order)
+                    //         return -1;
+                    //     else if (a.display_order > b.display_order)
+                    //         return 1;
+                    //     else 
+                    //         return (a.name <= b.name);
+                    // });
 
                 each del in deliverables || []
                     +deliverable(
