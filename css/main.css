@@ -1016,21 +1016,21 @@ h1, h2, h3, h4, h5, h6 {
         background: #FFDD2E; }
         .deliverable__content .deliverable__buckets li.deliverable__bucket.tech:after {
           content: url("../images/buckets/tech.svg"); }
-      .deliverable__content .deliverable__buckets li.deliverable__bucket.research {
+      .deliverable__content .deliverable__buckets li.deliverable__bucket.research, .deliverable__content .deliverable__buckets li.deliverable__bucket.rfidocs {
         background: #F16521; }
-        .deliverable__content .deliverable__buckets li.deliverable__bucket.research:after {
+        .deliverable__content .deliverable__buckets li.deliverable__bucket.research:after, .deliverable__content .deliverable__buckets li.deliverable__bucket.rfidocs:after {
           content: url("../images/buckets/strategy.svg"); }
-      .deliverable__content .deliverable__buckets li.deliverable__bucket.exercises {
+      .deliverable__content .deliverable__buckets li.deliverable__bucket.exercises, .deliverable__content .deliverable__buckets li.deliverable__bucket.offerings {
         background: #FAAB18; }
-        .deliverable__content .deliverable__buckets li.deliverable__bucket.exercises:after {
+        .deliverable__content .deliverable__buckets li.deliverable__bucket.exercises:after, .deliverable__content .deliverable__buckets li.deliverable__bucket.offerings:after {
           content: url("../images/buckets/barbell.svg"); }
-      .deliverable__content .deliverable__buckets li.deliverable__bucket.ux {
+      .deliverable__content .deliverable__buckets li.deliverable__bucket.ux, .deliverable__content .deliverable__buckets li.deliverable__bucket.deliverables {
         background: #FFDD2E; }
-        .deliverable__content .deliverable__buckets li.deliverable__bucket.ux:after {
+        .deliverable__content .deliverable__buckets li.deliverable__bucket.ux:after, .deliverable__content .deliverable__buckets li.deliverable__bucket.deliverables:after {
           content: url("../images/buckets/design.svg"); }
-      .deliverable__content .deliverable__buckets li.deliverable__bucket.summary {
+      .deliverable__content .deliverable__buckets li.deliverable__bucket.summary, .deliverable__content .deliverable__buckets li.deliverable__bucket.proposal {
         background: #8FCF4A; }
-        .deliverable__content .deliverable__buckets li.deliverable__bucket.summary:after {
+        .deliverable__content .deliverable__buckets li.deliverable__bucket.summary:after, .deliverable__content .deliverable__buckets li.deliverable__bucket.proposal:after {
           content: url("../images/buckets/clipboard.svg"); }
   .deliverable__content h2.h2 {
     font-size: 24px;
@@ -1132,24 +1132,14 @@ h1, h2, h3, h4, h5, h6 {
       background: rgba(37, 50, 56, 0.9); }
     .hero.All .hero__all {
       display: block; }
-  .hero.Design .background__screen, .hero.Research .background__screen {
+  .hero.Design .background__screen, .hero.Research .background__screen, .hero.RFI_Docs .background__screen {
     background: rgba(241, 101, 33, 0.9); }
-  .hero.Design .hero__design,
-  .hero.Design .hero__1-research, .hero.Research .hero__design,
-  .hero.Research .hero__1-research {
-    display: block; }
-  .hero.Strategy .background__screen, .hero.Exercises .background__screen {
+  .hero.Strategy .background__screen, .hero.Exercises .background__screen, .hero.Offerings .background__screen {
     background: rgba(250, 171, 24, 0.9); }
-  .hero.Strategy .hero__strategy, .hero.Exercises .hero__strategy {
-    display: block; }
-  .hero.Tech .background__screen, .hero.UX .background__screen {
+  .hero.Tech .background__screen, .hero.UX .background__screen, .hero.Deliverables .background__screen {
     background: rgba(255, 221, 46, 0.9); }
-  .hero.Tech .hero__tech, .hero.UX .hero__tech {
-    display: block; }
-  .hero.Qa .background__screen, .hero.Summary .background__screen {
+  .hero.Qa .background__screen, .hero.Summary .background__screen, .hero.Proposal .background__screen {
     background: rgba(143, 207, 74, 0.9); }
-  .hero.Qa .hero__strategy, .hero.Summary .hero__strategy {
-    display: block; }
   .hero h2.h2, .hero p, .hero span {
     color: white; }
   .hero h2.h2 {

@@ -115,25 +115,29 @@
                     content:url('../images/buckets/tech.svg');
                 }
             }
-            &.deliverable__bucket.research {
+            &.deliverable__bucket.research,
+            &.deliverable__bucket.rfidocs {
                 background: $second-color;
                 &:after {
                     content:url('../images/buckets/strategy.svg');
                 }
             }
-            &.deliverable__bucket.exercises {
+            &.deliverable__bucket.exercises,
+            &.deliverable__bucket.offerings {
                 background: $third-color;
                 &:after {
                     content:url('../images/buckets/barbell.svg');
                 }
             }
-            &.deliverable__bucket.ux {
+            &.deliverable__bucket.ux,
+            &.deliverable__bucket.deliverables {
                 background: $fourth-color;
                 &:after {
                     content:url('../images/buckets/design.svg');
                 }
             }
-            &.deliverable__bucket.summary {
+            &.deliverable__bucket.summary,
+            &.deliverable__bucket.proposal {
                 background: #8FCF4A;
                 &:after {
                     content:url('../images/buckets/clipboard.svg');
