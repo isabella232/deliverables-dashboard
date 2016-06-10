@@ -113,7 +113,7 @@
         @include animate(fly-in 400ms cubic-bezier(.1,.6,.3,1.10) 0ms);
     }
     .hero__title h2.h2 {
-        padding: 0 0 24px;
+        padding: 8px 0 24px;
         @include animate(fly-in 400ms cubic-bezier(.1,.6,.3,1.10) 100ms);
         @include delay-fix;
     }

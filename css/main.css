@@ -1205,7 +1205,7 @@ h1, h2, h3, h4, h5, h6 {
     -o-animation: fly-in 400ms cubic-bezier(0.1, 0.6, 0.3, 1.1) 0ms;
     animation: fly-in 400ms cubic-bezier(0.1, 0.6, 0.3, 1.1) 0ms; }
   .hero__details .hero__title h2.h2 {
-    padding: 0 0 24px;
+    padding: 8px 0 24px;
     -webkit-animation: fly-in 400ms cubic-bezier(0.1, 0.6, 0.3, 1.1) 100ms;
     -moz-animation: fly-in 400ms cubic-bezier(0.1, 0.6, 0.3, 1.1) 100ms;
     -ms-animation: fly-in 400ms cubic-bezier(0.1, 0.6, 0.3, 1.1) 100ms;
