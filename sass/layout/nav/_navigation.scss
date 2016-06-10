@@ -41,20 +41,24 @@
             //     background: $second-color;
             // }
             &.DESIGN,
-            &.RESEARCH {
+            &.RESEARCH,
+            &.RFIDOCS {
                 background: $second-color;
             }
             &.STRATEGY,
-            &.EXERCISES {
+            &.EXERCISES,
+            &.OFFERINGS {
                 background: $third-color;
             }
             &.TECH,
-            &.UX {
+            &.UX,
+            &.DELIVERABLES {
                 background: $fourth-color;
                 // .bucket__name {color: $header}
             }
             &.QA,
-            &.SUMMARY {
+            &.SUMMARY,
+            &.PROPOSAL {
                 background: #8FCF4A;
             }
         }

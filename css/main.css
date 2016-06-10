@@ -324,7 +324,7 @@ h1, h2, h3, h4, h5, h6 {
     filter: alpha(opacity=54); }
 
 .header {
-  height: 72px;
+  height: 76px;
   position: fixed;
   top: 0;
   right: 0;
@@ -382,7 +382,7 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer; }
   .header h1.h1 {
     font-size: 24px;
-    line-height: 71px;
+    line-height: 75px;
     padding-left: 24px; }
     @media (max-width: 600px) {
       .header h1.h1 {
@@ -396,7 +396,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   left: 0; }
   .navigation .buckets {
-    width: 72px;
+    width: 76px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -404,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #253238;
     border-right: 1px solid #253238; }
     .navigation .buckets .bucket {
-      height: 72px;
+      height: 76px;
       position: relative; }
       @media (min-width: 1025px) and (max-width: 3000px) {
         .navigation .buckets .bucket:hover a {
@@ -423,13 +423,13 @@ h1, h2, h3, h4, h5, h6 {
           bottom: 3px; }
       .navigation .buckets .bucket.all {
         background: #253238; }
-      .navigation .buckets .bucket.DESIGN, .navigation .buckets .bucket.RESEARCH {
+      .navigation .buckets .bucket.DESIGN, .navigation .buckets .bucket.RESEARCH, .navigation .buckets .bucket.RFIDOCS {
         background: #F16521; }
-      .navigation .buckets .bucket.STRATEGY, .navigation .buckets .bucket.EXERCISES {
+      .navigation .buckets .bucket.STRATEGY, .navigation .buckets .bucket.EXERCISES, .navigation .buckets .bucket.OFFERINGS {
         background: #FAAB18; }
-      .navigation .buckets .bucket.TECH, .navigation .buckets .bucket.UX {
+      .navigation .buckets .bucket.TECH, .navigation .buckets .bucket.UX, .navigation .buckets .bucket.DELIVERABLES {
         background: #FFDD2E; }
-      .navigation .buckets .bucket.QA, .navigation .buckets .bucket.SUMMARY {
+      .navigation .buckets .bucket.QA, .navigation .buckets .bucket.SUMMARY, .navigation .buckets .bucket.PROPOSAL {
         background: #8FCF4A; }
     .navigation .buckets .bucket__anchor {
       width: 100%;
@@ -464,13 +464,13 @@ h1, h2, h3, h4, h5, h6 {
         .navigation .buckets .bucket__name {
           font-size: 10px; } }
   .navigation .tags {
-    width: 228px;
+    width: 224px;
     height: 100%;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 72px;
+    left: 76px;
     background: #F8FAFB;
     border-right: 1px solid #E7E8EA; }
     .navigation .tags .tag {
@@ -890,7 +890,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate3d(0, 0, 0); } }
 .content {
   position: relative;
-  padding-top: 72px;
+  padding-top: 76px;
   margin-left: 300px;
   background: white;
   *zoom: 1; }
